@@ -8,16 +8,20 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
   <!-- External Google Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Bungee%7CBungee+Shade&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/article.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -56,16 +60,26 @@
       </form>
     </section>
     <section id="tweet-container">
-      <article>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae libero non, blanditiis cum corporis laboriosam
-        delectus repellendus facilis voluptatibus iusto earum cumque ad, voluptates dolores culpa itaque exercitationem
-        quo distinctio. Deserunt, velit tenetur error laboriosam excepturi repellendus! Expedita magnam voluptate ipsam
-        rem sed nemo perferendis ducimus minus? Adipisci magnam voluptatibus eius laudantium saepe esse aspernatur quis
-        expedita deleniti consequuntur fugiat, delectus eaque, laboriosam, ratione asperiores temporibus ab quod et
-        dicta totam. Laboriosam fugiat optio provident perferendis atque voluptatem, similique dolores accusantium,
-        dolore a quia reiciendis est temporibus tenetur? Tempore sint at nihil ducimus dicta aut a neque labore.
-        Doloribus delectus tempora amet soluta excepturi, beatae pariatur commodi enim quas magni! Repellat
-        reprehenderit labore necessitatibus modi numquam, dignissimos facilis nulla deserunt!
+      <article class="tweet">
+        <header>
+          <div class="top-header">
+            <img src="/images/iconfin.png">Sweet Pepper</i>
+
+          </div>
+          <div class="top-header">@Pepper</div>
+
+        </header>
+        <div id="tweet-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, error.
+        </div>
+        <footer>
+          <span>10 days ago</span>
+          <div class="icon">
+            <i class="material-icons">favorite</i>
+            <i class="material-icons">favorite</i>
+            <i class="material-icons">favorite</i>
+          </div>
+        </footer>
       </article>
     </section>
 
