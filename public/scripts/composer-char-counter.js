@@ -3,10 +3,12 @@ $(document).ready(function () {
     const inputLength = $(this).val().length;
     const maxInput = 140;
     $('.counter').text(maxInput - inputLength)
-    if(maxInput-inputLength <= 0) {
+    if (maxInput - inputLength <= 0) {
       $('.counter').css("color", "red")
-    } else{
-      $('.counter').css("color", "black")
+      $("#alert-exeed-length").show(200)
+    } else {
+      $('.counter').css("color", " #545149")
+      $("#alert-exeed-length").hide(200)
     }
   })
 

@@ -32,3 +32,11 @@ button {
   padding: 5px;
   float: left;
 }
+.alert {
+  color: rgba(244, 33, 33, 0.845);
+  text-align: center;
+  border: solid rgba(244, 33, 33, 0.845);
+}
+.new-tweet {
+  margin-top: 20px;
+}

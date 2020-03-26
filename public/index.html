@@ -52,7 +52,8 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
+      <h2 id="alert-empty-tweet" class="alert">Please, enter your tweet!</h2>
+      <h2 id="alert-exeed-length" class="alert">Your tweet exceeds maximum length, please shorten it up to 140 characters!</h2>
       <form action="/tweets" method="POST" id="form">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
