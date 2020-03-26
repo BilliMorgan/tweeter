@@ -5,6 +5,8 @@ $(document).ready(function () {
     $('.counter').text(maxInput - inputLength)
     if(maxInput-inputLength <= 0) {
       $('.counter').css("color", "red")
+    } else{
+      $('.counter').css("color", "black")
     }
   })
 

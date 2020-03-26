@@ -3,7 +3,11 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
 
 const renderTweets = (tweets) => {
@@ -12,7 +16,7 @@ $("#tweets-container").html("")
     $("#tweets-container").prepend(createTweetElement(tweet))
   }
 }
-
+//need to add escape to each user's inputs.
 createTweetElement = (tweet) => {
   let $tweet = $("<article>").addClass("tweet");
   $tweet.html(`
@@ -23,7 +27,7 @@ createTweetElement = (tweet) => {
           <div class="top-header">${tweet.user.handle}</div>
         </header>
         <div id="tweet-text">
-          ${tweet.content.text}
+          ${escape(tweet.content.text)}
         </div>
         <footer>
           <span>${jQuery.timeago((tweet.created_at / 1000) * 1000)}</span>
