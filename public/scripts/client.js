@@ -20,7 +20,7 @@ $("#tweets-container").html("")
 createTweetElement = (tweet) => {
   let $tweet = $("<article>").addClass("tweet");
   $tweet.html(`
-  <header>
+  <header class="article-header">
           <div class="top-header">
             <img src=${tweet.user.avatars}>${tweet.user.name}</i>
           </div>

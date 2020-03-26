@@ -1,14 +1,16 @@
 .tweet {
   position: relative;
   display: block;
-  margin: 100px 0px 100px 0px;
-  border: solid black;
+  margin: 100px 0px 0px 0px;
+  border: solid #545149;
   padding: 20px;
 }
 .tweet:hover {
-box-shadow: 10px 10px grey;
+box-shadow: 10px 20px grey;
+font-weight: 700;
 }
-article.tweet header {
+
+.article-header {
   position: relative;
   display: flex;
   width: auto;
@@ -39,6 +41,10 @@ article.tweet span {
   font-family: Source sans pro;
 }
 
-.material-icons {
+
+i {
+  color: #4056A1;
   font-size: small;
+  display: flex;
+  
 }

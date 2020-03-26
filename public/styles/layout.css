@@ -16,17 +16,40 @@ html {
 
 body {
   color: #545149;
-  background-color: #0c97c9;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  display: flex;
+
 }
 main {
   position: relative;
-  width: 90%;
-  left: 50%;
-  transform: translate(-50%);
+  width: 60%;
+  margin-top: 300px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+
+
+@media only screen and (max-width: 768px) {
+  #header {
+    width: 50%;
+    
+    color: red;
+  }
+  main {
+    width: 50%;
+    
+    color: red;
+  }
+  nav {
+    width: 50%;
+    color: red;
+    
+  }
+}

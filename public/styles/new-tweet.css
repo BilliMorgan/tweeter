@@ -1,27 +1,20 @@
-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  
-  padding-bottom: 10px;
-}
+
+
 #tweet-text {
-display: flex;
-flex-direction: column;
-justify-content: start;
 width: 100%;
 border: none;
 border-bottom: solid #545149;
 background-color: transparent;
 color: #545149;
-font-weight: bold;
-margin-bottom: 10px;
+font-weight: 300;
+margin-top: 20px;
 outline: none;
 }
 
+
 .counter {
-  float: right;
   font-family: Bungee, sans-serif;
+  float: right;
 }
 button {
   font-family: Bungee, sans-serif;
@@ -37,6 +30,6 @@ button {
   text-align: center;
   border: solid rgba(244, 33, 33, 0.845);
 }
-.new-tweet {
-  margin-top: 20px;
+.label-title {
+font-weight: 700;
 }

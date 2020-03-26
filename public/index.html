@@ -4,7 +4,7 @@
 <head>
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
-
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
@@ -35,17 +35,17 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span>tweeter</span>
-    Write a new tweet
+    <span class="tweeter-span">tweeter</span>
+    <span class="write-span">Write a new tweet</span>
   </nav>
-  <header>
+  <header id="header">
     <div class="avatarName">
       <div>
         <img src="/images/profile-hex.png">
       </div>
       <br>
       <div>
-        <h2>Your Name</h2>
+        <h2>Kasholka</h2>
       </div>
     </div>
   </header>
@@ -55,7 +55,7 @@
       <h2 id="alert-empty-tweet" class="alert">Please, enter your tweet!</h2>
       <h2 id="alert-exeed-length" class="alert">Your tweet exceeds maximum length, please shorten it up to 140 characters!</h2>
       <form action="/tweets" method="POST" id="form">
-        <label for="tweet-text">What are you humming about?</label>
+        <label class="label-title" for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
         <button id="button" type="submit">Tweet</button>
         <output name="counter" class="counter" for="tweet-text">140</output>

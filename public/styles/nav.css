@@ -2,12 +2,15 @@ nav {
   color: #FFFFFF;
   position: fixed;
   height: 120px;
-  width: 100vw;
+  width: 100%;
   z-index: 5;
   background-color: #4056A1;
   padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+
 }
 
-span{
+.tweeter-span {
   font-family: 'Bungee', cursive, sans-serif;
 }
