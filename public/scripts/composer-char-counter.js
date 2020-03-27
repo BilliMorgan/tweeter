@@ -1,3 +1,4 @@
+//counter and exceeding error functionality
 $(document).ready(function () {
   $('#tweet-text').on('keyup', function () {
     const inputLength = $(this).val().length;
@@ -11,5 +12,4 @@ $(document).ready(function () {
       $("#alert-exeed-length").hide(200)
     }
   })
-
 });

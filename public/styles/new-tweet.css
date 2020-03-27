@@ -1,7 +1,7 @@
-
 .new-tweet{
   margin-bottom: 50px;
 }
+
 #tweet-text {
 width: 100%;
 border: none;
@@ -13,11 +13,11 @@ margin-top: 20px;
 outline: none;
 }
 
-
 .counter {
   font-family: Bungee, sans-serif;
   float: right;
 }
+
 button {
   font-family: Bungee, sans-serif;
   border: none;
@@ -27,11 +27,13 @@ button {
   padding: 5px;
   float: left;
 }
+
 .alert {
   color: rgba(244, 33, 33, 0.845);
   text-align: center;
   border: solid rgba(244, 33, 33, 0.845);
 }
+
 .label-title {
 font-weight: 700;
 }

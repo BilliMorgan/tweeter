@@ -5,6 +5,7 @@
   border: solid #545149;
   padding: 20px;
 }
+
 .tweet:hover {
 box-shadow: 10px 20px grey;
 font-weight: 700;
@@ -20,31 +21,31 @@ font-weight: 700;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .top-header {
   position: relative;
   margin: 10px;
   display: flex;
-
 }
+
 div.top-header img {
   position: relative;
 }
+
 article.tweet footer {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
+
 article.tweet span {
   font-size: small;
   font-family: Source sans pro;
 }
 
-
 i {
   color: #4056A1;
   font-size: small;
-  display: flex;
-  
+  display: flex;  
 }

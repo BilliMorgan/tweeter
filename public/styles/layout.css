@@ -3,9 +3,11 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -20,8 +22,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   display: flex;
-
 }
+
 main {
   position: relative;
   width: 60%;
@@ -29,7 +31,3 @@ main {
   margin-left: 5%;
   margin-right: 5%;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
