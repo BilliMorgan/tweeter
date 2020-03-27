@@ -3,7 +3,7 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-const escape =  function(str) {
+const escape = function (str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -11,7 +11,7 @@ const escape =  function(str) {
 
 
 const renderTweets = (tweets) => {
-$("#tweets-container").html("")
+  $("#tweets-container").html("")
   for (tweet of tweets) {
     $("#tweets-container").prepend(createTweetElement(tweet))
   }
@@ -57,32 +57,43 @@ const clearForm = () => {
 $(document).ready(function () {
   //renderTweets(data);
   loadTweets();
+  $(".new-tweet").hide(200)
+
+  let hidenTextArea = false;
+  $(".write-span").click(function () {
+    if (hidenTextArea === false) {
+      $(".new-tweet").show(200)
+      $("#tweet-text").focus()
+      hidenTextArea = true;
+    } else {
+      $(".new-tweet").hide(200)
+      hidenTextArea = false;
+    }
+  });
+
 
   $("#form").submit(function (event) {
     event.preventDefault();
     let data = $("#form").serialize()
 
-    if($('#tweet-text').val() === "" || $('#tweet-text').val() === null ){
+    if ($('#tweet-text').val() === "" || $('#tweet-text').val() === null) {
       $("#alert-empty-tweet").show(200)
-    } 
-    // else if($('.counter').val() <= 0 ){
-    //   $("#alert-exeed-length").show(200)
-    // }
+    }
     else {
-    $.post("/tweets", data)
-    
-      .done(function(){
-        loadTweets();
-        clearForm();
-        
-      })
+      $.post("/tweets", data)
+
+        .done(function () {
+          loadTweets();
+          clearForm();
+
+        })
     }
   });
   $("#alert-empty-tweet").hide()
   $("#alert-exeed-length").hide()
-  $("#tweet-text").on('keyup', function(){
+  $("#tweet-text").on('keyup', function () {
     const inputLength = $('#tweet-text').val().length;
-    if(inputLength > 0){
+    if (inputLength > 0) {
       $("#alert-empty-tweet").hide(200)
     }
   })

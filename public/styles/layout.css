@@ -33,23 +33,3 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
-
-
-@media only screen and (max-width: 768px) {
-  #header {
-    width: 50%;
-    
-    color: red;
-  }
-  main {
-    width: 50%;
-    
-    color: red;
-  }
-  nav {
-    width: 50%;
-    color: red;
-    
-  }
-}
