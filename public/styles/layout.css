@@ -24,7 +24,7 @@ body {
   display: flex;
 }
 
-main {
+.container {
   position: relative;
   width: 60%;
   margin-top: 300px;
@@ -33,25 +33,23 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-  #header {
-    position: relative;
-    display: flex;
-    width: 100%;
-    color:red;
-  }
-  main {
-    position: relative;
-    display: flex;
-    width: 100%;
-    color: green;
-  }
-  nav {
-    display: flex;
-    position: relative;
-    width: 100%;
-    color: blue;
-  }
   body {
-    color: chartreuse;
+    display: block;
+  }
+ 
+  .container{
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }

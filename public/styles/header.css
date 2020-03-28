@@ -1,4 +1,4 @@
-#header {
+.header {
   height: 460px;
   width: 40%;
   position: relative;
@@ -13,9 +13,25 @@
 
 .avatarName {
   position: relative;
-  top: auto;
-  bottom: auto;
   margin-left: auto;
   margin-right: auto;
   padding-top: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: 360px;
+    
+  }
+  .avatarName{
+    padding-top: 55px;
+    
+  }
+  h2 {
+    margin: 0px;
+  }
 }

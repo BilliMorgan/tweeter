@@ -1,16 +1,17 @@
 .new-tweet{
   margin-bottom: 50px;
+
 }
 
 #tweet-text {
-width: 100%;
-border: none;
-border-bottom: solid #545149;
-background-color: transparent;
-color: #545149;
-font-weight: 300;
-margin-top: 20px;
-outline: none;
+  width: 100%;
+  border: none;
+  border-bottom: solid #545149;
+  background-color: transparent;
+  color: #545149;
+  font-weight: 300;
+  margin-top: 20px;
+  outline: none;
 }
 
 .counter {
@@ -36,4 +37,12 @@ button {
 
 .label-title {
 font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .new-tweet{
+    margin-bottom: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
 }

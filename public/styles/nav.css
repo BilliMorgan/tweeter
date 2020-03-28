@@ -13,3 +13,16 @@ nav {
 .tweeter-span {
   font-family: 'Bungee', cursive, sans-serif;
 }
+@media only screen and (max-width: 768px) {
+nav {
+  padding: 0.5em;
+  height: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
