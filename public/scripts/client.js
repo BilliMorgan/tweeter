@@ -61,6 +61,7 @@ $(document).ready(function () {
   loadTweets();
   //hiding
   $(".new-tweet").hide(200);
+
   // hide and show input form by click
   let hidenTextArea = false;
   $(".write-span").click(function () {
@@ -78,9 +79,15 @@ $(document).ready(function () {
   $("#form").submit(function (event) {
     event.preventDefault();
     let data = $("#form").serialize()
+
+    
     //error functionality
     if ($('#tweet-text').val() === "" || $('#tweet-text').val() === null) {
       $("#alert-empty-tweet").show(200)
+    } 
+    else if($('.counter').val() <= 0 ) {
+      console.log()
+     // $("#alert-exeed-length").show(200)
     }
     else {
       $.post("/tweets", data)
